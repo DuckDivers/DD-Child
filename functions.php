@@ -13,4 +13,11 @@ function my_theme_enqueue_styles() {
         wp_get_theme()->get('Version')
     );
 }
+
+// Uncomment to remove CPT from Parent Theme
+/*function remove_parent_theme_cpts(){
+    remove_action('init', 'my_post_type_header_image');
+}
+add_action('after_setup_theme', 'remove_parent_theme_cpts'); */
+
 ?>
