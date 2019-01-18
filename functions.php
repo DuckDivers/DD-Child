@@ -10,7 +10,7 @@ function my_theme_enqueue_styles() {
     wp_enqueue_style( 'child-style',
         get_stylesheet_directory_uri() . '/custom.css',
         array( $parent_style ),
-        wp_get_theme()->get('Version')
+        filemtime(get_stylesheet_directory() . '/custom.css')
     );
 }
 
@@ -19,5 +19,3 @@ function my_theme_enqueue_styles() {
     remove_action('init', 'my_post_type_header_image');
 }
 add_action('after_setup_theme', 'remove_parent_theme_cpts'); */
-
-?>
