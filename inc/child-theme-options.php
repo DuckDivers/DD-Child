@@ -27,11 +27,13 @@ $capability = 'edit_theme_options';
 //                    'type'              => 'section' );
 //
 //
-//$options[] = array( 'title'             => __( 'Test Option', 'dd_theme' ),
-//                    'description'       => __( 'Show the Search Box in the Navigation Bar', 'dd_theme' ),
-//                    'section'           => 'slug_section_id',
-//                    'id'                => 'test_new_option',
-//					'default'			=> '1',
-//                    'option'            => 'checkbox',
-//                    'sanitize_callback' => '',
-//                    'type'              => 'control' );
+// OPTIONS FOR HOMEPAGE YOUTUBE VIDEO
+/* $options[] = array( 'title'             => __( 'Homepage Video', 'dd_theme' ),
+                    'description'       => __( 'Use the youtube video ID only', 'dd_theme' ),
+                    'section'           => 'dd_theme_options',
+                    'id'                => 'homepage-video',
+					'default'			=> '1',
+                    'option'            => 'text',
+                    'sanitize_callback' => 'sanitize_text_field',
+                    'type'              => 'control' );
+*/					
