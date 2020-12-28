@@ -13,6 +13,9 @@ function my_theme_enqueue_styles() {
 
 }
 
+// Remove Parent Style
+add_action('wp_enqueue_scripts', function(){wp_dequeue_style('_s-style');}, 20);
+
 // Uncomment to remove CPT from Parent Theme
 /*function remove_parent_theme_cpts(){
     remove_action('init', 'my_post_type_header_image');
